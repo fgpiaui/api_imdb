@@ -22,6 +22,7 @@
     "tslint": "^5.12.1"
   },
   "dependencies": {
+    "@types/node": "^16.11.9",
     "@types/typescript": "^2.0.0",
     "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",

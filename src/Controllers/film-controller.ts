@@ -4,9 +4,9 @@ import ImageModel from "../Models/image-models";
 import PageWebController from "./page-web-controller";
 
 export default class FilmController extends PageWebController implements IPageWeb{
-    private nivel: number
+    private nivel: string
     private classe = '.lister-item-header a'
-    constructor (nivel: number){
+    constructor (nivel: string){
         super()
         this.nivel = nivel        
     }   
@@ -20,7 +20,7 @@ export default class FilmController extends PageWebController implements IPageWe
         }
         return film
     }
-    url(valor: number | string): string{
+    url(valor: string): string{
         return `https://www.imdb.com/search/title/?title_type=feature&release_date=1900-01-01,2020-12-31&count=50&start=${valor}&ref_=adv_nxt`
     }
 }

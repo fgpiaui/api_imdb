@@ -2,8 +2,8 @@ import FilmController from "./film-controller"
 import ImageController from "./image-controller"
 
 export default class ControllerMain{
-    private nivel: number
-    constructor(nivel: number){
+    private nivel: string = '1'
+    constructor(nivel: string){
         this.nivel = nivel
     }
 

@@ -1,6 +1,6 @@
 export default interface ImageModel{
     titulo: string,
     id: string,
-    nivel: number,
+    nivel: string,
     imagem: string,
 }
